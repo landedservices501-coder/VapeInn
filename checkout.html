@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | VapeInn</title>
+
+    <link rel="stylesheet" href="css/checkout.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+<!--================ HEADER ================-->
+
+<header>
+
+    <div class="logo">
+        <h1>VapeInn</h1>
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div class="header-icons">
+
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="wishlist.html"><i class="fas fa-heart"></i></a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+
+    </div>
+
+</header>
+
+<!--================ BREADCRUMB ================-->
+
+<section class="breadcrumb">
+
+    <a href="index.html">Home</a>
+
+    <span>/</span>
+
+    <a href="cart.html">Cart</a>
+
+    <span>/</span>
+
+    <span class="current">Checkout</span>
+
+</section>
+
+<!--================ CHECKOUT ================-->
+
+<section class="checkout">
+
+    <!-- LEFT SIDE -->
+
+    <div class="checkout-form">
+
+        <h2>Billing Details</h2>
+
+        <form>
+
+            <div class="row">
+
+                <div class="input-group">
+
+                    <label>First Name</label>
+
+                    <input type="text" required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Last Name</label>
+
+                    <input type="text" required>
+
+                </div>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Email Address</label>
+
+                <input type="email" required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Phone Number</label>
+
+                <input type="tel" required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Country</label>
+
+                <select>
+
+                    <option>Select Country</option>
+                    <option>United States</option>
+                    <option>Canada</option>
+                    <option>United Kingdom</option>
+                    <option>Australia</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Street Address</label>
+
+                <input type="text" required>
+
+            </div>
+
+            <div class="row">
+
+                <div class="input-group">
+
+                    <label>City</label>
+
+                    <input type="text">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>ZIP Code</label>
+
+                    <input type="text">
+
+                </div>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Order Notes</label>
+
+                <textarea rows="5"
+                placeholder="Special delivery instructions..."></textarea>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <aside class="order-summary">
+
+        <h2>Your Order</h2>
+
+        <div class="summary-item">
+
+            <span>Vaporesso XROS 4 ×1</span>
+
+            <span>$34.99</span>
+
+        </div>
+
+        <div class="summary-item">
+
+            <span>Geek Bar Pulse ×2</span>
+
+            <span>$59.98</span>
+
+        </div>
+
+        <hr>
+
+        <div class="summary-item">
+
+            <span>Subtotal</span>
+
+            <span>$94.97</span>
+
+        </div>
+
+        <div class="summary-item">
+
+            <span>Shipping</span>
+
+            <span>$8.00</span>
+
+        </div>
+
+        <div class="summary-item">
+
+            <span>Tax</span>
+
+            <span>$7.50</span>
+
+        </div>
+
+        <hr>
+
+        <div class="summary-item total">
+
+            <span>Total</span>
+
+            <span>$110.47</span>
+
+        </div>
+
+    </aside>
+
+</section>
+
+</body>
+</html>
