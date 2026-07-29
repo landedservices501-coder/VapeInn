@@ -453,3 +453,245 @@ border-radius:50px;
 }
 
 }
+
+/*==================================
+    PRODUCT INFORMATION
+==================================*/
+
+.product-information,
+.specifications,
+.box-content,
+.shipping,
+.product-tags{
+
+    padding:80px 8%;
+
+}
+
+.info-tabs{
+
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:35px;
+
+}
+
+.info-tabs button{
+
+    padding:12px 24px;
+    border:none;
+    border-radius:30px;
+    background:#1b1b1b;
+    color:white;
+    cursor:pointer;
+}
+
+.info-tabs .active{
+
+    background:var(--primary);
+
+}
+
+.info-card{
+
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+
+}
+
+.info-card h2{
+
+    margin-bottom:20px;
+
+}
+
+.info-card h3{
+
+    margin:30px 0 20px;
+
+}
+
+.info-card p{
+
+    color:var(--gray);
+
+}
+
+.feature-list{
+
+    list-style:none;
+
+}
+
+.feature-list li{
+
+    margin-bottom:15px;
+    color:var(--gray);
+
+}
+
+.feature-list i{
+
+    color:var(--primary);
+    margin-right:10px;
+
+}
+
+/*==================================
+    TABLE
+==================================*/
+
+.specifications table{
+
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:20px;
+
+}
+
+.specifications th,
+.specifications td{
+
+    padding:18px;
+    border:1px solid #2c2c2c;
+
+}
+
+.specifications th{
+
+    width:35%;
+    background:#1b1b1b;
+    text-align:left;
+
+}
+
+.specifications td{
+
+    background:#181818;
+    color:var(--gray);
+
+}
+
+/*==================================
+    BOX CONTENT
+==================================*/
+
+.box-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:40px;
+
+}
+
+.box-item{
+
+    background:#1b1b1b;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:var(--shadow);
+
+}
+
+.box-item i{
+
+    font-size:45px;
+    color:var(--primary);
+    margin-bottom:20px;
+
+}
+
+/*==================================
+    SHIPPING
+==================================*/
+
+.shipping-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+
+}
+
+.shipping-card{
+
+    background:#1b1b1b;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:var(--shadow);
+
+}
+
+.shipping-card i{
+
+    font-size:45px;
+    color:var(--primary);
+    margin-bottom:20px;
+
+}
+
+.shipping-card p{
+
+    color:var(--gray);
+
+}
+
+/*==================================
+    TAGS
+==================================*/
+
+.tags{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
+
+}
+
+.tags span{
+
+    background:#1b1b1b;
+    padding:12px 20px;
+    border-radius:30px;
+    color:white;
+
+}
+
+/*==================================
+    RESPONSIVE
+==================================*/
+
+@media(max-width:768px){
+
+.product-information,
+.specifications,
+.box-content,
+.shipping,
+.product-tags{
+
+padding:70px 5%;
+
+}
+
+.info-card{
+
+padding:25px;
+
+}
+
+.specifications{
+
+overflow-x:auto;
+
+}
+
+}
