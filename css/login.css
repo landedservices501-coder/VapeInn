@@ -917,3 +917,400 @@ justify-content:center;
 }
 
 }
+/*==================================
+    PART 4 - PREMIUM EFFECTS
+==================================*/
+
+/* Smooth Scrolling */
+
+html{
+
+    scroll-behavior:smooth;
+    scroll-padding-top:90px;
+
+}
+
+/*==================================
+    TEXT SELECTION
+==================================*/
+
+::selection{
+
+    background:var(--primary);
+    color:#fff;
+
+}
+
+/*==================================
+    CUSTOM SCROLLBAR
+==================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--secondary);
+
+}
+
+/*==================================
+    GLOBAL TRANSITIONS
+==================================*/
+
+*{
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+/*==================================
+    FORM INPUTS
+==================================*/
+
+.input-box input{
+
+    transition:all .3s ease;
+
+}
+
+.input-box input:focus{
+
+    outline:none;
+    border:1px solid var(--primary);
+    box-shadow:0 0 12px rgba(0,212,255,.25);
+
+}
+
+/*==================================
+    PASSWORD BUTTON
+==================================*/
+
+.toggle-password{
+
+    transition:.3s;
+
+}
+
+.toggle-password:hover{
+
+    color:var(--primary);
+
+}
+
+/*==================================
+    BUTTONS
+==================================*/
+
+.login-btn,
+.register-btn,
+.newsletter button,
+.social-login button{
+
+    transition:all .35s ease;
+
+}
+
+.login-btn:hover,
+.register-btn:hover,
+.newsletter button:hover{
+
+    background:var(--secondary);
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(0,212,255,.25);
+
+}
+
+.social-login button:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* Social Brand Colors */
+
+.google:hover{
+
+    background:#DB4437;
+
+}
+
+.facebook:hover{
+
+    background:#1877F2;
+
+}
+
+.apple:hover{
+
+    background:#555;
+
+}
+
+/*==================================
+    CARDS
+==================================*/
+
+.login-form,
+.benefit-card,
+.testimonial-card,
+.security-card,
+.faq-item,
+.trust-card{
+
+    transition:all .35s ease;
+
+}
+
+.login-form:hover,
+.benefit-card:hover,
+.testimonial-card:hover,
+.security-card:hover,
+.faq-item:hover,
+.trust-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,212,255,.20);
+
+}
+
+/*==================================
+    IMAGES
+==================================*/
+
+.login-info img,
+.testimonial-card img{
+
+    transition:transform .4s ease;
+
+}
+
+.login-info img:hover,
+.testimonial-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/*==================================
+    ICONS
+==================================*/
+
+.benefit-card i,
+.security-card i,
+.trust-card i{
+
+    transition:transform .3s ease;
+
+}
+
+.benefit-card:hover i,
+.security-card:hover i,
+.trust-card:hover i{
+
+    transform:scale(1.15);
+
+}
+
+/*==================================
+    FOOTER
+==================================*/
+
+.footer-grid a{
+
+    transition:all .3s ease;
+
+}
+
+.footer-grid a:hover{
+
+    padding-left:6px;
+
+}
+
+.footer-social a{
+
+    transition:all .3s ease;
+
+}
+
+.footer-social a:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,212,255,.25);
+
+}
+
+/*==================================
+    SECTION HEADINGS
+==================================*/
+
+section h2{
+
+    position:relative;
+    display:inline-block;
+    margin-bottom:20px;
+
+}
+
+section h2::after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    width:70%;
+    height:4px;
+    background:var(--primary);
+    border-radius:20px;
+
+}
+
+/*==================================
+    PAGE ANIMATION
+==================================*/
+
+.login-container,
+.benefits,
+.testimonials,
+.security-info,
+.register-cta,
+.faq,
+.newsletter,
+.trust-section{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==================================
+    GLASSMORPHISM EFFECT
+==================================*/
+
+.login-form{
+
+    background:rgba(27,27,27,.92);
+    backdrop-filter:blur(10px);
+
+}
+
+/*==================================
+    RESPONSIVE POLISH
+==================================*/
+
+@media(max-width:991px){
+
+.login-container{
+
+grid-template-columns:1fr;
+
+}
+
+.login-info{
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+
+}
+
+.header-icons{
+
+margin-top:10px;
+
+}
+
+.social-login{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.login-section,
+.benefits,
+.testimonials,
+.security-info,
+.register-cta,
+.faq,
+.newsletter,
+.trust-section{
+
+padding-left:5%;
+padding-right:5%;
+
+}
+
+.login-form{
+
+padding:25px;
+
+}
+
+.login-btn,
+.register-btn{
+
+width:100%;
+
+}
+
+}
