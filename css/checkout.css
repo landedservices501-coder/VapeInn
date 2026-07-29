@@ -572,3 +572,700 @@ flex-direction:column;
 }
 
 }
+
+/*==================================
+    SHIPPING INFO
+==================================*/
+
+.shipping-info,
+.why-us,
+.faq,
+.newsletter{
+
+padding:90px 8%;
+
+}
+
+.section-text{
+
+color:var(--gray);
+
+margin:15px 0 40px;
+
+max-width:650px;
+
+}
+
+.shipping-grid,
+.why-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:30px;
+
+}
+
+.shipping-card,
+.why-card{
+
+background:#1b1b1b;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:var(--shadow);
+
+}
+
+.shipping-card i,
+.why-card i{
+
+font-size:48px;
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}
+
+.shipping-card p,
+.why-card p{
+
+color:var(--gray);
+
+margin-top:15px;
+
+}
+
+/*==================================
+    FAQ
+==================================*/
+
+.faq-container{
+
+display:grid;
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.faq-item{
+
+background:#1b1b1b;
+
+padding:30px;
+
+border-radius:18px;
+
+box-shadow:var(--shadow);
+
+}
+
+.faq-item h3{
+
+margin-bottom:15px;
+
+}
+
+.faq-item p{
+
+color:var(--gray);
+
+}
+
+/*==================================
+    NEWSLETTER
+==================================*/
+
+.newsletter{
+
+text-align:center;
+
+}
+
+.newsletter p{
+
+color:var(--gray);
+
+margin:20px auto 35px;
+
+max-width:650px;
+
+}
+
+.newsletter form{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.newsletter input{
+
+width:420px;
+
+max-width:100%;
+
+padding:18px;
+
+background:#222;
+
+border:none;
+
+border-radius:50px;
+
+color:white;
+
+}
+
+.newsletter button{
+
+padding:18px 35px;
+
+background:var(--primary);
+
+border:none;
+
+border-radius:50px;
+
+color:white;
+
+font-weight:600;
+
+cursor:pointer;
+
+}
+
+/*==================================
+    FOOTER
+==================================*/
+
+footer{
+
+background:#0d0d0d;
+
+padding:70px 8% 30px;
+
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:40px;
+
+}
+
+.footer-grid h3{
+
+margin-bottom:20px;
+
+}
+
+.footer-grid p,
+.footer-grid li{
+
+color:var(--gray);
+
+margin-bottom:12px;
+
+}
+
+.footer-grid ul{
+
+list-style:none;
+
+}
+
+.footer-grid a:hover{
+
+color:var(--primary);
+
+}
+
+.footer-social{
+
+display:flex;
+
+gap:15px;
+
+}
+
+.footer-social a{
+
+width:45px;
+
+height:45px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:#1b1b1b;
+
+border-radius:50%;
+
+color:white;
+
+}
+
+.footer-social a:hover{
+
+background:var(--primary);
+
+}
+
+footer hr{
+
+margin:40px 0 20px;
+
+border:none;
+
+height:1px;
+
+background:#333;
+
+}
+
+.copyright{
+
+text-align:center;
+
+color:var(--gray);
+
+}
+
+/*==================================
+    RESPONSIVE
+==================================*/
+
+@media(max-width:768px){
+
+.shipping-info,
+.why-us,
+.faq,
+.newsletter{
+
+padding:70px 5%;
+
+}
+
+.newsletter form{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.newsletter input,
+.newsletter button{
+
+width:100%;
+max-width:450px;
+
+}
+
+.footer-grid{
+
+text-align:center;
+
+}
+
+.footer-social{
+
+justify-content:center;
+
+}
+
+}
+
+/*==================================
+    PART 4 - PREMIUM EFFECTS
+==================================*/
+
+/* Smooth Scrolling */
+
+html{
+
+    scroll-behavior:smooth;
+    scroll-padding-top:90px;
+
+}
+
+/* Text Selection */
+
+::selection{
+
+    background:var(--primary);
+    color:#fff;
+
+}
+
+/*==================================
+    CUSTOM SCROLLBAR
+==================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--secondary);
+
+}
+
+/*==================================
+    GLOBAL TRANSITIONS
+==================================*/
+
+*{
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+/*==================================
+    FORM FIELDS
+==================================*/
+
+input,
+textarea,
+select{
+
+    transition:all .3s ease;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    outline:none;
+    border:1px solid var(--primary);
+    box-shadow:0 0 12px rgba(0,212,255,.25);
+
+}
+
+/*==================================
+    BUTTON EFFECTS
+==================================*/
+
+.place-order-btn,
+.promo-box button,
+.newsletter button{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+.place-order-btn::before,
+.promo-box button::before,
+.newsletter button::before{
+
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,.15);
+    transition:left .5s ease;
+
+}
+
+.place-order-btn:hover::before,
+.promo-box button:hover::before,
+.newsletter button:hover::before{
+
+    left:100%;
+
+}
+
+.place-order-btn:hover,
+.promo-box button:hover,
+.newsletter button:hover{
+
+    background:var(--secondary);
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(0,212,255,.25);
+
+}
+
+/*==================================
+    PAYMENT CARDS
+==================================*/
+
+.payment-card{
+
+    transition:all .3s ease;
+
+}
+
+.payment-card:hover{
+
+    transform:translateY(-5px);
+    border-color:var(--primary);
+    box-shadow:0 10px 25px rgba(0,212,255,.20);
+
+}
+
+/*==================================
+    INFORMATION CARDS
+==================================*/
+
+.shipping-card,
+.why-card,
+.faq-item,
+.order-summary,
+.checkout-form{
+
+    transition:all .35s ease;
+
+}
+
+.shipping-card:hover,
+.why-card:hover,
+.faq-item:hover,
+.order-summary:hover,
+.checkout-form:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,212,255,.20);
+
+}
+
+.shipping-card:hover i,
+.why-card:hover i{
+
+    transform:scale(1.15);
+
+}
+
+/*==================================
+    SECURITY BADGES
+==================================*/
+
+.security-badges div{
+
+    transition:all .3s ease;
+
+}
+
+.security-badges div:hover{
+
+    background:#2a2a2a;
+    transform:translateY(-4px);
+
+}
+
+/*==================================
+    FOOTER
+==================================*/
+
+.footer-grid a{
+
+    transition:all .3s ease;
+
+}
+
+.footer-grid a:hover{
+
+    padding-left:6px;
+
+}
+
+.footer-social a{
+
+    transition:all .3s ease;
+
+}
+
+.footer-social a:hover{
+
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,212,255,.25);
+
+}
+
+/*==================================
+    SECTION TITLES
+==================================*/
+
+section h2{
+
+    position:relative;
+    display:inline-block;
+    margin-bottom:20px;
+
+}
+
+section h2::after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    width:70%;
+    height:4px;
+    background:var(--primary);
+    border-radius:20px;
+
+}
+
+/*==================================
+    PAGE ANIMATIONS
+==================================*/
+
+.checkout-form,
+.order-summary,
+.shipping-info,
+.why-us,
+.faq,
+.newsletter{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==================================
+    RESPONSIVE POLISH
+==================================*/
+
+@media (max-width:991px){
+
+.checkout{
+
+grid-template-columns:1fr;
+
+}
+
+.order-summary{
+
+position:static;
+margin-top:30px;
+
+}
+
+}
+
+@media (max-width:768px){
+
+header{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+
+}
+
+.header-icons{
+
+margin-top:10px;
+
+}
+
+.payment-options{
+
+grid-template-columns:1fr;
+
+}
+
+.security-badges{
+
+flex-direction:column;
+
+}
+
+}
+
+@media (max-width:576px){
+
+.checkout,
+.shipping-info,
+.why-us,
+.faq,
+.newsletter{
+
+padding-left:5%;
+padding-right:5%;
+
+}
+
+.checkout-form,
+.order-summary{
+
+padding:25px;
+
+}
+
+.place-order-btn{
+
+font-size:16px;
+
+}
+
+}
