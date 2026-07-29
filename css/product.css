@@ -1027,3 +1027,429 @@ justify-content:center;
 }
 
 }
+
+/*==================================
+    PART 4 - PREMIUM EFFECTS
+==================================*/
+
+/* Smooth Scrolling */
+
+html{
+
+    scroll-behavior:smooth;
+    scroll-padding-top:90px;
+
+}
+
+/* Text Selection */
+
+::selection{
+
+    background:var(--primary);
+    color:#fff;
+
+}
+
+/*==================================
+    CUSTOM SCROLLBAR
+==================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--secondary);
+
+}
+
+/*==================================
+    GLOBAL TRANSITIONS
+==================================*/
+
+*{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease;
+
+}
+
+/*==================================
+    PRODUCT GALLERY
+==================================*/
+
+.main-image{
+
+    overflow:hidden;
+
+}
+
+.main-image img{
+
+    transition:transform .45s ease;
+
+}
+
+.main-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.thumbnail-images img{
+
+    border:2px solid transparent;
+    transition:all .3s ease;
+
+}
+
+.thumbnail-images img:hover{
+
+    border-color:var(--primary);
+    transform:translateY(-5px);
+
+}
+
+/*==================================
+    PRODUCT INFO
+==================================*/
+
+.product-info h1{
+
+    animation:fadeInDown .8s ease;
+
+}
+
+.price{
+
+    animation:fadeIn .9s ease;
+
+}
+
+.description{
+
+    animation:fadeIn 1.1s ease;
+
+}
+
+.stock{
+
+    animation:fadeIn 1.3s ease;
+
+}
+
+/*==================================
+    BUTTON EFFECTS
+==================================*/
+
+.cart-btn,
+.wishlist-btn,
+.newsletter button{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+.cart-btn::before,
+.newsletter button::before{
+
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,.15);
+    transition:left .5s ease;
+
+}
+
+.cart-btn:hover::before,
+.newsletter button:hover::before{
+
+    left:100%;
+
+}
+
+.cart-btn:hover{
+
+    background:var(--secondary);
+    transform:translateY(-3px);
+
+}
+
+.wishlist-btn:hover{
+
+    transform:scale(1.1);
+
+}
+
+/*==================================
+    CARDS
+==================================*/
+
+.info-card:hover,
+.box-item:hover,
+.shipping-card:hover,
+.review-card:hover,
+.related-card:hover,
+.overall-rating:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,212,255,.20);
+
+}
+
+.box-item:hover i,
+.shipping-card:hover i{
+
+    transform:scale(1.15);
+
+}
+
+/*==================================
+    TAGS
+==================================*/
+
+.tags span{
+
+    cursor:pointer;
+    transition:all .3s ease;
+
+}
+
+.tags span:hover{
+
+    background:var(--primary);
+
+}
+
+/*==================================
+    TABLE
+==================================*/
+
+.specifications tr:hover td,
+.specifications tr:hover th{
+
+    background:#202020;
+
+}
+
+/*==================================
+    NEWSLETTER
+==================================*/
+
+.newsletter input:focus{
+
+    outline:2px solid var(--primary);
+
+}
+
+/*==================================
+    FOOTER
+==================================*/
+
+.footer-grid a{
+
+    transition:all .3s ease;
+
+}
+
+.footer-grid a:hover{
+
+    padding-left:6px;
+
+}
+
+.footer-social a{
+
+    transition:all .3s ease;
+
+}
+
+.footer-social a:hover{
+
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,212,255,.30);
+
+}
+
+/*==================================
+    SECTION TITLES
+==================================*/
+
+section h2{
+
+    position:relative;
+    display:inline-block;
+    margin-bottom:20px;
+
+}
+
+section h2::after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    width:70%;
+    height:4px;
+    background:var(--primary);
+    border-radius:20px;
+
+}
+
+/*==================================
+    ANIMATIONS
+==================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeInDown{
+
+    from{
+
+        opacity:0;
+        transform:translateY(-25px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==================================
+    RESPONSIVE
+==================================*/
+
+@media (max-width:991px){
+
+.product-info h1{
+
+font-size:36px;
+
+}
+
+.main-image{
+
+padding:20px;
+
+}
+
+}
+
+@media (max-width:768px){
+
+header{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+
+}
+
+.header-icons{
+
+margin-top:10px;
+
+}
+
+.thumbnail-images{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media (max-width:576px){
+
+.product-details{
+
+padding:40px 5%;
+
+}
+
+.product-info h1{
+
+font-size:28px;
+
+}
+
+.price{
+
+display:flex;
+flex-direction:column;
+gap:10px;
+
+}
+
+.quantity-box{
+
+justify-content:center;
+
+}
+
+.action-buttons{
+
+flex-direction:column;
+
+}
+
+.cart-btn,
+.wishlist-btn{
+
+width:100%;
+
+}
+
+}
