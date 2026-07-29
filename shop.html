@@ -104,41 +104,45 @@ Shop Collection
 
         <input
             type="text"
+            id="searchProduct"
             placeholder="Search products...">
-
-        <button>
-
-            <i class="fas fa-search"></i>
-
-        </button>
 
     </div>
 
     <div class="filter-row">
 
-        <div class="filters">
-
-            <button class="active">All</button>
-            <button>Disposable</button>
-            <button>Pod Systems</button>
-            <button>Vape Kits</button>
-            <button>E-Liquids</button>
-
-        </div>
-
         <div class="sort">
 
             <label>Sort By</label>
 
-            <select>
+           <select id="categoryFilter">
 
-                <option>Featured</option>
-                <option>Newest</option>
-                <option>Price: Low to High</option>
-                <option>Price: High to Low</option>
-                <option>Highest Rated</option>
+    <option value="all">All Categories</option>
+    <option value="disposable">Disposable</option>
+    <option value="pods">Pod Systems</option>
+    <option value="mods">Mods</option>
 
-            </select>
+</select>
+
+<select id="brandFilter">
+
+    <option value="all">All Brands</option>
+    <option value="vaporesso">Vaporesso</option>
+    <option value="smok">SMOK</option>
+    <option value="geekvape">GeekVape</option>
+
+</select>
+
+<select id="sortProducts">
+
+    <option value="">Sort By</option>
+    <option value="low">Price: Low to High</option>
+    <option value="high">Price: High to Low</option>
+    <option value="name">Product Name</option>
+
+</select>
+
+<p id="productCount"></p>
 
         </div>
 
@@ -256,7 +260,7 @@ Premium products selected for you.
 
 <!-- Product 1 -->
 
-<div class="product-card">
+<div class="product-card" data-category="disposable" data-brand="vaporesso" data-price="29">
 
 <span class="badge">Best Seller</span>
 
@@ -294,7 +298,7 @@ Add to Cart
 
 <!-- Product 2 -->
 
-<div class="product-card">
+<div class="product-card" data-category="disposable" data-brand="vaporesso" data-price="29">
 
 <span class="badge">New</span>
 
@@ -332,7 +336,7 @@ Add to Cart
 
 <!-- Product 3 -->
 
-<div class="product-card">
+<div class="product-card" data-category="disposable" data-brand="vaporesso" data-price="29">
 
 <span class="badge">Popular</span>
 
@@ -370,7 +374,7 @@ Add to Cart
 
 <!-- Product 4 -->
 
-<div class="product-card">
+<div class="product-card" data-category="disposable" data-brand="vaporesso" data-price="29">
 
 <span class="badge">Hot</span>
 
@@ -408,7 +412,7 @@ Add to Cart
 
 <!-- Product 5 -->
 
-<div class="product-card">
+<div class="product-card" data-category="disposable" data-brand="vaporesso" data-price="29">
 
 <span class="badge">Top Rated</span>
 
@@ -446,7 +450,7 @@ Add to Cart
 
 <!-- Product 6 -->
 
-<div class="product-card">
+<div class="product-card" data-category="disposable" data-brand="vaporesso" data-price="29">
 
 <span class="badge">Popular</span>
 
@@ -484,7 +488,7 @@ Add to Cart
 
 <!-- Product 7 -->
 
-<div class="product-card">
+<div class="product-card" data-category="disposable" data-brand="vaporesso" data-price="29">
 
 <span class="badge">Trending</span>
 
@@ -522,7 +526,7 @@ Add to Cart
 
 <!-- Product 8 -->
 
-<div class="product-card">
+<div class="product-card" data-category="disposable" data-brand="vaporesso" data-price="29">
 
 <span class="badge">Premium</span>
 
